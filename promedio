@@ -1,0 +1,17 @@
+import sys
+from io import open
+if len(sys.argv) == 4:
+
+
+	n1  = int(sys.argv[1])
+	n2  = int(sys.argv[2])
+	n3  = int(sys.argv[3])
+
+	prom = (n1+n2+n3)/3
+
+if (prom>=3):
+	print("Verifique la respuesta en el archivo 'promedio.txt'")
+
+archivo = open("promedio.txt","w")
+archivo.write(" Su promedio del curso es = % s"%prom+'\n')
+archivo.close()
